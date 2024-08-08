@@ -1,8 +1,3 @@
-mdpa
-mutuelle
-octime
-intranet
-poitiers
 motdepasse
 password
 SesamOuvreToi
