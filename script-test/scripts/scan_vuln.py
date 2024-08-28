@@ -43,6 +43,7 @@ def check_server(url):
     print("\n[╦] \033[1;36mAnalyse du serveur Web\033[0m")
     try:
         response = requests.get(url)
+        # print(response.headers)
         server = response.headers.get("Server", "Non disponible")
         x_powered_by = response.headers.get("X-Powered-By", "Non disponible")
         content_encoding = response.headers.get("Content-Encoding", "Non supporté")
