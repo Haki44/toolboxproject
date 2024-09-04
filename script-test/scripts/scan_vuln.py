@@ -1,4 +1,5 @@
 import subprocess
+from halo import Halo
 import requests
 import re
 import sys
@@ -8,9 +9,9 @@ from colorama import Fore, Style
 def scan_vulnerabilities():
     """ Point d'entrée pour l'analyse des vulnérabilités """
 
-    print("\n" + "╔" + "═" * 39 + "╗")
-    print("║ Analyse des vulnérabilités avec Nikto ║")
-    print("╚" + "═" * 39 + "╝")
+    print("\n" + "╔" + "═" * 28 + "╗")
+    print("║ Analyse des vulnérabilités ║")
+    print("╚" + "═" * 28 + "╝")
 
     url = input("\n\033[1;36mEntrez l'URL à scanner : \033[0m")
     
@@ -20,6 +21,7 @@ def scan_vulnerabilities():
 
     check_server(url)
     check_robots_txt(url)
+    run_nikto_scan(url)
 
 
 def is_valid_url(url):
@@ -116,7 +118,27 @@ def check_security_headers(url):
         print("[╩]")
     except requests.exceptions.RequestException as e:
         print(f"{Fore.RED}>>> [-] Erreur lors de la vérification des en-têtes de sécurité : {e}{Style.RESET_ALL}")
+        
+def run_nikto_scan(url):
+    print("\n[╦] \033[1;36mLancement du scan Nikto\033[0m")
+    spinner = Halo(text='Scan Nikto en cours...', spinner='dots')
+    spinner.start()  # Démarrer le loader
 
+    try:
+        nikto_command = f"nikto -h {url}"
+        process = subprocess.Popen(nikto_command.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        output, error = process.communicate()
+        
+        spinner.stop()  # Arrêter le loader après le scan
+
+        if output:
+            print(f" ╠═[-] Résultats de Nikto :\n{output.decode('utf-8')}")
+            print("[╩]\n")
+        if error:
+            print(f"{Fore.RED}>>> [-] Erreur Nikto : {error.decode('utf-8')}{Style.RESET_ALL}")
+    except Exception as e:
+        spinner.stop()  # Arrêter le loader en cas d'erreur
+        print(f"{Fore.RED}>>> [-] Erreur lors de l'exécution de Nikto : {e}{Style.RESET_ALL}")
 
 def check_robots_txt(url):
     """ Vérifie l'accessibilité du fichier robots.txt """
