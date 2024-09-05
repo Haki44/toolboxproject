@@ -48,8 +48,8 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 - Conformité : Assurez-vous de respecter les lois et règlements en vigueur concernant les tests d'intrusion, et utilisez cet outil uniquement dans des contextes légaux.
 
 ## 👥 Contributeurs
-Djibril Dialo – M1 Cyber – SUP DE VINCI Nantes
-Maxence Bannier (Haki44) – M1 Cyber - SUP DE VINCI Nantes
+- Djibril Dialo – M1 Cyber – SUP DE VINCI Nantes
+- Maxence Bannier (Haki44) – M1 Cyber - SUP DE VINCI Nantes
 
 
 
