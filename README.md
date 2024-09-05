@@ -32,13 +32,27 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 ---
 
 ## 🔍 Fonctionnalités
-![image](https://github.com/user-attachments/assets/9e9cd02b-161e-4858-865d-ce7086e4ff71)
+![image](https://github.com/user-attachments/assets/64b0d59d-95d0-499d-963e-4507a8314065)
 
+1. **Scan de ports** :
 
+2. **Scan de vulnérabilités** :
 
+3. **Exploitation de vulnérabilités** :
+
+4. **Test d'authentification** :
+
+5. **Post exploitation** :
+
+6. **Analyse de la sécurité des mot de passes** :
+   
+7. **Générer un rapport** :
+
+---
 
 ## 💻 Utilisation
 
+---
 
 ## ⚠️ Limitations et Contexte d'Utilisation ⚠️
 
