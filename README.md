@@ -36,15 +36,13 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 
 
 
-## 💻 Exemples d'utilisation
+## 💻 Utilisation
 
 
 ## ⚠️ Limitations et Contexte d'Utilisation ⚠️
 
 - Environnement de test : Cette toolbox doit être utilisée uniquement dans des environnements contrôlés (laboratoires de test, systèmes virtuels) ou sur des systèmes pour lesquels vous avez l'autorisation explicite d'effectuer des tests d'intrusion.
-  
-- Performances : Certaines fonctionnalités comme la post-exploitation peuvent être gourmandes en ressources, en particulier lorsque vous explorez de grands systèmes de fichiers.
-  
+
 - Conformité : Assurez-vous de respecter les lois et règlements en vigueur concernant les tests d'intrusion, et utilisez cet outil uniquement dans des contextes légaux.
 
 ## 👥 Contributeurs
