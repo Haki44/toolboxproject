@@ -34,8 +34,9 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 ## 🔍 Fonctionnalités et Utilisation 💻
 
 ### Lancement du script
-      ```bash
-      python3 cyber_toolbox.py
+   ```bash
+   python3 cyber_toolbox.py
+   ```
 ![image](https://github.com/user-attachments/assets/64b0d59d-95d0-499d-963e-4507a8314065)
 
 1. **Scan de ports** :
