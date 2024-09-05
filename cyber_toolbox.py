@@ -49,7 +49,7 @@ def menu():
         input("Appuyez sur entrer pour retourner au menu")
         menu()
     elif choix == "7":
-        print("Script en cours ...")
+        print("Script en cours de développement")
         input("Appuyez sur entrer pour retourner au menu")
         menu()
     elif choix.upper() == "Q":
