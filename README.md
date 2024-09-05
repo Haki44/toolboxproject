@@ -23,7 +23,7 @@ Cette toolbox est conçue pour être utilisée par des professionnels de la cybe
 
 1. **Clonez le dépôt** :
    ```bash
-   git clone https://github.com/](https://github.com/Haki44/toolboxproject
+   git clone https://github.com/Haki44/toolboxproject.git
 Accédez au répertoire du projet :
 
 
