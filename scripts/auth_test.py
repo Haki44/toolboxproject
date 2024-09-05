@@ -54,7 +54,7 @@ def authentification_testing():
 
     # Lire la liste des mots de passe à partir du fichier passwords.txt
     with Halo(text='Chargement de la liste des mots de passe', spinner='dots'):
-        with open('list/passwords.txt', 'r') as file:
+        with open('includes/passwords.txt', 'r') as file:
             password_list = [line.strip() for line in file.readlines()]
 
     # Délai entre les tentatives
