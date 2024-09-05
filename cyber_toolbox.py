@@ -4,6 +4,7 @@ import sys
 from scripts.test_pwd import test_pwd
 from scripts.scan_vuln import scan_vulnerabilities
 from scripts.auth_test import authentification_testing
+from scripts.exec_post_exploit import exec_post_exploit
 
 def menu():
     # Affiche le menu
@@ -38,7 +39,7 @@ def menu():
         input("Appuyez sur entrer pour retourner au menu")
         menu()
     elif choix == "5":
-        print("Script en cours ...")
+        exec_post_exploit()
         input("Appuyez sur entrer pour retourner au menu")
         menu()
     elif choix == "6":
