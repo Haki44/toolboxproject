@@ -51,7 +51,7 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
    Une fois un accès obtenu, ce script récupère les fichiers sensibles et comprometants présents sur le système cible pour une analyse approfondie.
 7. **Analyse de la sécurité des mot de passes** :  
    Vérifie la sécurité d'un mot de passe en s'appuyant sur l'API Have I Been Pwned pour détecter les fuites ou réutilisations.
-8. **Générer un rapport** :  
+8. **Générer un rapport** (Cette fonctionnalité n'a pas encore été développée):  
    Compile les résultats des scans, des tests d'authentification, et des actions post-exploitation dans un rapport détaillé pour une analyse complète de la sécurité.
    
 ---
