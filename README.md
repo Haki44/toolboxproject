@@ -31,7 +31,7 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 
 ---
 
-## 🔍 Fonctionnalités
+## 🔍 Fonctionnalités et Utilisation 💻
 ![image](https://github.com/user-attachments/assets/64b0d59d-95d0-499d-963e-4507a8314065)
 
 1. **Scan de ports** :
@@ -50,10 +50,6 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 
 ---
 
-## 💻 Utilisation
-
----
-
 ## ⚠️ Limitations et Contexte d'Utilisation ⚠️
 
 - Environnement de test : Cette toolbox doit être utilisée uniquement dans des environnements contrôlés (laboratoires de test, systèmes virtuels) ou sur des systèmes pour lesquels vous avez l'autorisation explicite d'effectuer des tests d'intrusion.
@@ -61,7 +57,7 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 - Conformité : Assurez-vous de respecter les lois et règlements en vigueur concernant les tests d'intrusion, et utilisez cet outil uniquement dans des contextes légaux.
 
 ## 👥 Contributeurs
-- Djibril Dialo – M1 Cyber – SUP DE VINCI Nantes
+- Djibril Diallo – M1 Cyber – SUP DE VINCI Nantes
 - Maxence Bannier (Haki44) – M1 Cyber - SUP DE VINCI Nantes
 
 
