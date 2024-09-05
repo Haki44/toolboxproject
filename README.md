@@ -41,17 +41,23 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 
 1. **Scan de ports** :  
    Analyse les ports ouverts d'une URL ou d'une IP spécifiée afin d'identifier les services exposés et leurs éventuelles vulnérabilités.
+   
 3. **Scan de vulnérabilités** :  
    Effectue un audit des vulnérabilités d'un site web pour détecter les failles de sécurité connues.
-4. **Exploitation de vulnérabilités** :  
+   
+5. **Exploitation de vulnérabilités** :  
    Cherche et exploite en profondeur les vulnérabilités détectées pour évaluer l'impact potentiel sur le système cible.
-5. **Test d'authentification** :  
+   
+7. **Test d'authentification** :  
    Réalise des attaques par force brute sur les connexions SSH pour tester la robustesse des identifiants de connexion.
-6. **Post exploitation** :  
+   
+9. **Post exploitation** :  
    Une fois un accès obtenu, ce script récupère les fichiers sensibles et comprometants présents sur le système cible pour une analyse approfondie.
-7. **Analyse de la sécurité des mot de passes** :  
+   
+11. **Analyse de la sécurité des mot de passes** :  
    Vérifie la sécurité d'un mot de passe en s'appuyant sur l'API Have I Been Pwned pour détecter les fuites ou réutilisations.
-8. **Générer un rapport** (Cette fonctionnalité n'a pas encore été développée):  
+
+13. **Générer un rapport** (Cette fonctionnalité n'a pas encore été développée):  
    Compile les résultats des scans, des tests d'authentification, et des actions post-exploitation dans un rapport détaillé pour une analyse complète de la sécurité.
    
 ---
