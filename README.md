@@ -41,7 +41,7 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 
 1. **Scan de ports** :  
    Analyse les ports ouverts d'une URL ou d'une IP spécifiée afin d'identifier les services exposés et leurs éventuelles vulnérabilités.
-   ![image](https://github.com/user-attachments/assets/0cb7410f-acbc-4703-b927-e659fe77773d)
+   ![image](https://github.com/user-attachments/assets/e672573b-2cb3-4715-84a0-720bf807a8f4)
    
 3. **Scan de vulnérabilités** :  
    Effectue un audit des vulnérabilités d'un site web pour détecter les failles de sécurité connues.
