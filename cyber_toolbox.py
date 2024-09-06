@@ -1,8 +1,8 @@
 import subprocess
 from art import tprint
 import sys
-from scripts.scan_ports import scan_ports_services_os
-from scripts.vuln_exploit import scan_website
+from scripts.scan_ports import scan_ports
+from scripts.vuln_exploit import vuln_exploit
 from scripts.test_pwd import test_pwd
 from scripts.scan_vuln import scan_vulnerabilities
 from scripts.auth_test import authentification_testing
@@ -25,7 +25,7 @@ def menu():
 
     # Vérifie le choix de l'utilisateur
     if choix == "1":
-        scan_ports_services_os()
+        scan_ports()
         input("Appuyez sur entrer pour retourner au menu")
         menu()
     elif choix == "2":
@@ -33,7 +33,7 @@ def menu():
         input("Appuyez sur entrer pour retourner au menu")
         menu()
     elif choix == "3":
-        scan_website()
+        vuln_exploit()
         input("Appuyez sur entrer pour retourner au menu")
         menu()
     elif choix == "4":
