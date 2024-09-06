@@ -16,7 +16,7 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 - 🐍 Python 3 ou plus
 - Outils requis : `git`, `pip`
 - Systèmes d'exploitation compatibles : Linux (🐉 kali recommandé)
-- Outils Kali : `nmap`, `zaproxy`
+- Outils Kali : `nmap`, `zaproxy`  
   **NMAP**
    ```bash
    sudo apt install nmap
