@@ -62,7 +62,10 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
    
 3. **Exploitation de vulnérabilités** :  
    Cherche et exploite en profondeur les vulnérabilités détectées pour évaluer l'impact potentiel sur le système cible.
-   
+
+   ![image](https://github.com/user-attachments/assets/42601154-b810-4812-91c0-3e4b8654b5a9)
+   ![image](https://github.com/user-attachments/assets/deacdeb7-d1be-448e-a4a3-0e31e1f6e9c7)
+
 4. **Test d'authentification** :  
    Réalise des attaques par force brute sur les connexions SSH pour tester la robustesse des identifiants de connexion.
      
