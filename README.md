@@ -7,7 +7,7 @@ Projet d'étude : création d'une toolbox de cybersécurité.
 
 L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrusion sur les systèmes et réseaux cibles. Elle permet de simplifier le processus en automatisant de nombreuses tâches complexes et en offrant une série de fonctionnalités avancées pour identifier et analyser les vulnérabilités mais aussi de tester la sécurité des systèmes.
 
-Cette toolbox s'appuie entièrement sur des **librairies Python open source** et des **outils Kali Linux**. Tous les composants utilisés pour développer et exécuter la toolbox sont libres et accessibles à tous, ce qui garantit une transparence totale
+Cette toolbox s'appuie entièrement sur des **librairies Python open source** et des **outils Kali Linux**. Tous les composants utilisés pour développer et exécuter la toolbox sont libres et accessibles à tous, ce qui garantit une transparence totale.
 
 ---
 
