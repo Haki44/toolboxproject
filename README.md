@@ -40,29 +40,29 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 ![image](https://github.com/user-attachments/assets/64b0d59d-95d0-499d-963e-4507a8314065)
 
 1. **Scan de ports** :  
-   Analyse les ports ouverts d'une URL ou d'une IP spécifiée afin d'identifier les services exposés et leurs éventuelles vulnérabilités.
+   Analyse les ports ouverts d'une URL ou d'une IP spécifiée afin d'identifier les services exposés et leurs éventuelles vulnérabilités.  
    ![image](https://github.com/user-attachments/assets/b812cf70-1b9d-4a38-8cf7-145edc3f716e)
 
 2. **Scan de vulnérabilités** :  
-   Effectue un audit des vulnérabilités d'un site web pour détecter les failles de sécurité connues.
+   Effectue un audit des vulnérabilités d'un site web pour détecter les failles de sécurité connues.  
    ![image](https://github.com/user-attachments/assets/9ed90a23-428c-40a6-82d9-ce8a48740531)
    
 3. **Exploitation de vulnérabilités** :  
    Cherche et exploite en profondeur les vulnérabilités détectées pour évaluer l'impact potentiel sur le système cible.
    
 4. **Test d'authentification** :  
-   Réalise des attaques par force brute sur les connexions SSH pour tester la robustesse des identifiants de connexion.
+   Réalise des attaques par force brute sur les connexions SSH pour tester la robustesse des identifiants de connexion.  
    ![image](https://github.com/user-attachments/assets/eae19e58-a0c5-42a9-a871-31615d887f3b)
 
 5. **Post exploitation** :  
    Une fois un accès obtenu, ce script récupère les fichiers sensibles et comprometants présents sur le système cible pour une analyse approfondie.
 
-   - Utilisation : Pour utiliser ce module, il faut au préalable avoir un accès de la machine cible en SSH et connaitre l'OS
+   - Utilisation : Pour utiliser ce module, il faut au préalable avoir un accès de la machine cible en SSH et connaitre l'OS  
    ![Screenshot_1](https://github.com/user-attachments/assets/286c2167-45ee-41e7-afc4-18908ae830de)
    ![image](https://github.com/user-attachments/assets/31636acb-1ba4-483f-9ccc-a1d5cd994c2b)
 
 6. **Analyse de la sécurité des mot de passes** :  
-   Vérifie la sécurité d'un mot de passe en s'appuyant sur l'API Have I Been Pwned pour détecter les fuites ou réutilisations.
+   Vérifie la sécurité d'un mot de passe en s'appuyant sur l'API Have I Been Pwned pour détecter les fuites ou réutilisations.  
    ![image](https://github.com/user-attachments/assets/41aabe17-0874-41df-85a9-65e77ecfd511)
 
 7. **Générer un rapport** (Cette fonctionnalité n'a pas encore été développée):  
