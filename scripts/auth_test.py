@@ -1,8 +1,28 @@
 import paramiko
 import time
 import threading
+import socket
+import subprocess
 from queue import Queue, Empty
 from halo import Halo
+from colorama import Fore, Style
+
+# Fonction pour vérifier si une IP est joignable via ping
+def is_host_reachable(ip):
+    resp = subprocess.call(["ping", ip], stdout=subprocess.PIPE)
+    return resp
+
+# Fonction pour vérifier si un port est ouvert
+def is_port_open(ip, port):
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.settimeout(1)
+    try:
+        sock.connect((ip, port))
+        return True
+    except socket.error:
+        return False
+    finally:
+        sock.close()
 
 def authentification_testing():
     # Fonction pour tester l'authentification SSH
@@ -15,6 +35,16 @@ def authentification_testing():
             return True, f"Authentication successful for {username}:{password} on {ip}:{port}"
         except paramiko.AuthenticationException:
             return False, f"Authentication failed for {username}:{password} on {ip}:{port}"
+        except paramiko.SSHException as e:
+            # Gestion de l'erreur de bannière SSH
+            print(f"{Fore.RED}>>> [!] Erreur de protocole SSH : {e}\nVérifiez que le service SSH est activé sur la cible.{Style.RESET_ALL}")
+            stop_event.set()  # Arrête tous les threads en cas d'échec SSH
+            return False, f"SSH error occurred: {e}"
+        except ConnectionResetError:
+            # Gestion de l'erreur de connexion réinitialisée
+            print(f"{Fore.RED}>>> [!] Connexion réinitialisée par l'hôte.\nVérifiez que le service SSH de la cible est opérationnel.{Style.RESET_ALL}")
+            stop_event.set()  # Arrête tous les threads en cas d'échec de connexion
+            return False, "Connection was reset by the host"
         except Exception as e:
             return False, f"Error occurred: {e}"
         finally:
@@ -44,9 +74,19 @@ def authentification_testing():
     print("╚" + "═" * 29 + "╝")
     ip = input("\n\033[1;36mEntrez l'IP cible : \033[0m")
 
+    # Vérification si l'IP est joignable via ping
+    if is_host_reachable(ip) == 1:
+        print(f"{Fore.RED}[!] La cible {ip} n'est pas joignable.{Style.RESET_ALL}")
+        return
+
     # Demander le port avec une valeur par défaut de 22
     port_input = input("\033[1;36mEntrez le port (par défaut 22) : \033[0m")
     port = int(port_input) if port_input else 22
+
+    # Vérification si le port est ouvert
+    if not is_port_open(ip, port):
+        print(f"{Fore.RED}[!] Le port {port} sur {ip} n'est pas ouvert.{Style.RESET_ALL}")
+        return
 
     # Demander le nom d'utilisateur avec une valeur par défaut de 'admin'
     username_input = input("\033[1;36mEntrez le nom d'utilisateur (par défaut 'admin') : \033[0m")
