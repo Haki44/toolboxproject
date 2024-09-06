@@ -53,7 +53,11 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
    
 9. **Post exploitation** :  
    Une fois un accès obtenu, ce script récupère les fichiers sensibles et comprometants présents sur le système cible pour une analyse approfondie.
-   
+
+   - Utilisation : Pour utiliser ce module, il faut au préalable avoir un accès de la machine cible en SSH et connaitre l'OS
+   ![Screenshot_1](https://github.com/user-attachments/assets/286c2167-45ee-41e7-afc4-18908ae830de)
+   ![image](https://github.com/user-attachments/assets/31636acb-1ba4-483f-9ccc-a1d5cd994c2b)
+
 11. **Analyse de la sécurité des mot de passes** :  
    Vérifie la sécurité d'un mot de passe en s'appuyant sur l'API Have I Been Pwned pour détecter les fuites ou réutilisations.
 
