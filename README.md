@@ -14,21 +14,30 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 ### Prérequis
 
 - 🐍 Python 3 ou plus
-- Systèmes d'exploitation compatibles : Linux (🐉 kali recommandé)
 - Outils requis : `git`, `pip`
-
+- Systèmes d'exploitation compatibles : Linux (🐉 kali recommandé)
+- Outils Kali : `nmap`, `zaproxy`
+   ```bash
+   sudo apt install nmap
+   ```
+   ```bash
+   sudo apt install zaproxy
+   ```
 ### Étapes d'installation
 
 1. **Clonez le dépôt** :
    ```bash
    git clone https://github.com/Haki44/toolboxproject.git
+   ```
 2. **Accédez au répertoire du projet** :
    ```bash
    cd toolboxproject
+   ```
 3. **Installer les dépendances** :
    ```bash
    pip install -r requirements.txt
-
+    ```
+   
 ---
 
 ## 🔍 Fonctionnalités et Utilisation 💻
@@ -44,33 +53,33 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
    
    ![image](https://github.com/user-attachments/assets/b812cf70-1b9d-4a38-8cf7-145edc3f716e)
 
-3. **Scan de vulnérabilités** :  
+2. **Scan de vulnérabilités** :  
    Effectue un audit des vulnérabilités d'un site web pour détecter les failles de sécurité connues.
     
    ![image](https://github.com/user-attachments/assets/9ed90a23-428c-40a6-82d9-ce8a48740531)
    
-5. **Exploitation de vulnérabilités** :  
+3. **Exploitation de vulnérabilités** :  
    Cherche et exploite en profondeur les vulnérabilités détectées pour évaluer l'impact potentiel sur le système cible.
    
-6. **Test d'authentification** :  
+4. **Test d'authentification** :  
    Réalise des attaques par force brute sur les connexions SSH pour tester la robustesse des identifiants de connexion.
      
    ![image](https://github.com/user-attachments/assets/eae19e58-a0c5-42a9-a871-31615d887f3b)
 
-8. **Post exploitation** :  
+5. **Post exploitation** :  
    Une fois un accès obtenu, ce script récupère les fichiers sensibles et comprometants présents sur le système cible pour une analyse approfondie.
 
    - Utilisation : Pour utiliser ce module, il faut au préalable avoir un accès de la machine cible en SSH et connaitre l'OS
-   - 
+     
    ![Screenshot_1](https://github.com/user-attachments/assets/286c2167-45ee-41e7-afc4-18908ae830de)
    ![image](https://github.com/user-attachments/assets/31636acb-1ba4-483f-9ccc-a1d5cd994c2b)
 
-9. **Analyse de la sécurité des mot de passes** :  
+6. **Analyse de la sécurité des mot de passes** :  
    Vérifie la sécurité d'un mot de passe en s'appuyant sur l'API Have I Been Pwned pour détecter les fuites ou réutilisations.
      
    ![image](https://github.com/user-attachments/assets/41aabe17-0874-41df-85a9-65e77ecfd511)
 
-11. **Générer un rapport** (Cette fonctionnalité n'a pas encore été développée):  
+7. **Générer un rapport** (Cette fonctionnalité n'a pas encore été développée):  
    Compile les résultats des scans, des tests d'authentification, et des actions post-exploitation dans un rapport détaillé pour une analyse complète de la sécurité.
    
 ---
