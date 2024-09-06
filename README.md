@@ -86,7 +86,19 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 
 7. **Générer un rapport** (Cette fonctionnalité n'a pas encore été développée):  
    Compile les résultats des scans, des tests d'authentification, et des actions post-exploitation dans un rapport détaillé pour une analyse complète de la sécurité.
-   
+
+
+## 🔜 A venir ⏳
+
+### Intégration Docker 🐋
+
+Dans les prochaines versions, l'objectif est d'emballer la toolbox dans une image **Docker**. Cette intégration permettra de simplifier le déploiement et l'exécution de la toolbox sur n'importe quel environnement sans avoir à gérer manuellement les dépendances et les configurations système.
+
+L'utilisation de Docker offrira les avantages suivants :
+- **Portabilité** : Exécuter la toolbox sur n'importe quel système d'exploitation prenant en charge Docker.
+- **Isolation** : Les tests d'intrusion et les scans se feront dans un environnement isolé, minimisant les risques d'interférence avec le système hôte.
+- **Facilité de déploiement** : Un seul fichier `Dockerfile` pour configurer et déployer rapidement la toolbox.
+
 ---
 
 ## ⚠️ Limitations et Contexte d'Utilisation ⚠️
