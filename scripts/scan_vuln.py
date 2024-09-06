@@ -13,7 +13,7 @@ def scan_vulnerabilities():
     print("║ Analyse des vulnérabilités ║")
     print("╚" + "═" * 28 + "╝")
 
-    url = input("\n\033[1;36mEntrez l'URL à scanner : \033[0m")
+    url = input("\n\033[1;36mEntrez l'URL à scanner (ex: https://www.exemple.com): \033[0m")
     
     if not is_valid_url(url):
         print(f"{Fore.RED}>>> [!] Format de l'URL incorrect{Style.RESET_ALL}")
