@@ -17,11 +17,11 @@ L'objectif de cette toolbox est de faciliter et d'automatiser les tests d'intrus
 - Outils requis : `git`, `pip`
 - Systèmes d'exploitation compatibles : Linux (🐉 kali recommandé)
 - Outils Kali : `nmap`, `zaproxy`  
-  **NMAP**
+  **Commande d'installation Nmap**
    ```bash
    sudo apt install nmap
    ```
-   **ZAPROXY**
+   **Commande d'installation Zaproxy**
    ```bash
    sudo apt install zaproxy
    ```
